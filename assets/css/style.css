@@ -1,0 +1,518 @@
+html,
+body {
+  height: 100%;
+  margin: 0px;
+  padding: 0;
+
+  height: 3000px;
+}
+#pageContainer {
+  width: 100%;
+  height: 100%;
+  background: #fafafa;
+}
+a:hover {
+  text-decoration: none;
+}
+/********startmasterhead conbtainer*/
+#mastHeadContainer {
+  position: fixed;
+  width: 100%;
+  height: 56px;
+  border-bottom: 1px solid #e8e8e8;
+  top: 0;
+  left: 0;
+  background: white;
+  align-items: center;
+  display: flex;
+  z-index: 1;
+  padding: 7px 16px;
+  box-sizing: border-box;
+}
+#mastHeadContainer button:not(.searchButton),
+#mastHeadContainer .rightIcons img {
+  border: none;
+  background: transparent;
+  width: 40px;
+  height: 40px;
+  padding: 7px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+#mastHeadContainer .rightIcons {
+}
+#mastHeadContainer button img {
+  width: 100%;
+  height: 100%;
+}
+#mastHeadContainer .logoContainer {
+  width: 150px;
+}
+#mastHeadContainer .logoContainer img {
+  height: 25px;
+  margin-left: 8px;
+}
+
+#mastHeadContainer .searchBarContainer {
+  flex: 1;
+  margin: 0px 40px;
+  display: flex;
+}
+
+#mastHeadContainer .searchBarContainer form {
+  display: flex;
+  flex: 1;
+}
+#mastHeadContainer .searchBarContainer .searchBar {
+  flex: 1;
+  max-width: 600px;
+  color: #111;
+  padding: 2px 6px;
+  font-size: 14px;
+  font-weight: 100;
+  border: 1px solid #ccc;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+  border-right: none;
+  height: 32px;
+  box-shadow: #eee 0px 1px 2px 0px inset;
+}
+#mastHeadContainer .searchBarContainer .searchButton {
+  height: 32px;
+  width: 65px;
+  background-color: #f8f8f8;
+  border: 1px solid #d3d3d3;
+  cursor: pointer;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+#mastHeadContainer .searchBarContainer .searchButton img {
+  height: 25px;
+  width: 25px;
+}
+/********masterhead container*************/
+#sideNavContainer {
+  width: 240px;
+  background: #f5f5f5;
+  padding-top: 56px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+#mainSectionContainer {
+  padding-top: 56px;
+  display: flex;
+}
+#mainSectionContainer.leftPadding {
+  padding-left: 240px;
+}
+#mainContentContainer {
+  padding: 10px 30px; /*10for top down and 30 for left and right*/
+  display: flex;
+  flex: 1;
+  background-color: #fafafa;
+  box-sizing: border-box;
+}
+.column {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: white;
+  min-height: 300px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px;
+}
+/*****signin.php*************/
+.signInContainer {
+  background-color: #efefee;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+.signInContainer .column .header img {
+  width: 100px;
+}
+.signInContainer .column {
+  flex-grow: 0;
+  width: 450px;
+  padding: 20px 35px;
+  max-height: 100%;
+  overflow-y: auto;
+}
+
+.signInContainer .header {
+  padding: 20px 0px;
+}
+.signInContainer .header h3 {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  margin: 0px;
+  padding-bottom: 0px;
+  padding-top: 16px;
+}
+.signInContainer .header span {
+  font-size: 14px;
+}
+.signInContainer .column .loginForm {
+  padding-top: 24px;
+}
+.signInContainer .loginForm form {
+  display: flex;
+  flex-direction: column;
+}
+.signInContainer .loginForm input[type='text'],
+.signInContainer .loginForm input[type='email'],
+.signInContainer .loginForm input[type='password'] {
+  border: none;
+  font-size: 14px;
+  border-bottom: 1px solid #dedede;
+  margin-bottom: 10px;
+}
+.signInContainer .loginForm input[type='submit'] {
+  width: 88px;
+  height: 36px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  background-color: #4285f4;
+  border: none;
+  border-radius: 3px;
+  font-weight: 500;
+  color: white;
+}
+
+.signInContainer .column .signInMesssage {
+  font-size: 14px;
+  font-weight: 400;
+  color: #212429;
+}
+.signInContainer .loginForm .errorMessage {
+  color: red;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+}
+
+/**************watch.php***************/
+.watchLeftColumn {
+  flex: 1;
+}
+.watchLeftColumn .videoPlayer {
+  width: 100%;
+}
+.suggestion {
+  max-width: 425px;
+  flex-grow: 1;
+  height: 100%;
+  padding-left: 24px;
+}
+.videoInfo {
+  width: 100%;
+  padding: 20px 0 8px 0;
+}
+.videoInfo h1 {
+  display: block;
+  overflow: hidden;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.videoInfo .bottonSection {
+  display: flex;
+}
+.videoInfo .bottonSection .viewCount {
+  color: rgba(17, 17, 17, 0.6);
+  font-size: 16px;
+  flex: 1;
+}
+.videoInfo .bottonSection .controls {
+  flex: 1;
+  text-align: right;
+}
+.videoInfo .bottonSection .controls button {
+  padding: 0px;
+  background-color: transparent;
+  color: rgba(17, 17, 17, 0.4);
+  font-weight: 500;
+  font-size: 13px;
+  cursor: pointer;
+  border: none;
+}
+.videoInfo .bottonSection .controls button img {
+  width: 20px;
+  height: 20px;
+  margin: 4px 8px 8px 8px;
+}
+
+.secoundryInfo {
+  border-bottom: 1px solid #dedede;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+.secoundryInfo .topRow {
+  display: flex;
+  margin-bottom: 12px;
+}
+.profilePic {
+  height: 100%;
+}
+.secoundryInfo .topRow .profilePic {
+  margin-right: 16px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+.secoundryInfo .topRow .uploadInfo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+}
+.secoundryInfo .topRow .uploadInfo .date {
+  color: rgba(17, 17, 17, 0.6);
+  font-size: 13px;
+  font-weight: 400;
+}
+.secoundryInfo .descriptionContainer {
+  margin-left: 64px;
+  max-width: 615px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+}
+.secoundryInfo .topRow .button {
+  padding: 6px 15px;
+  cursor: pointer;
+  font-weight: 500;
+  border-radius: 2px;
+  border: none;
+  font-size: 14px;
+}
+.secoundryInfo .topRow .subscribeButtonContainer,
+.secoundryInfo .topRow .editVideoButttonContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.subscribeButtonContainer .subscribe {
+  background-color: red;
+  color: white;
+}
+
+.subscribeButtonContainer .unsubscribe {
+  background-color: eee;
+  color: rgba(17, 17, 17, 0.6);
+}
+.editVideoButttonContainer .edit {
+  background-color: #2692e6;
+  color: rgba(17, 17, 17, 0.6);
+}
+
+.secoundryInfo .topRow .uploadInfo .owner a {
+  font-size: 14px;
+  font-weight: 500;
+  color: #000;
+}
+
+.commentSection .header {
+  margin-top: 24px;
+  margin-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+}
+.commentSection .commentForm .profilePic,
+.commentSection .comment .profilePic {
+  margin-right: 16px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+.commentSection .header .commentCount {
+  margin-bottom: 24px;
+}
+.commentSection .header .commentForm,
+.itemContainer .commentForm {
+  display: flex;
+}
+.commentSection .header .commentForm textarea,
+.itemContainer .commentForm textarea {
+  flex: 1;
+  background: transparent;
+  border: none;
+  font-size: 14px;
+  color: #111;
+  resize: none;
+}
+.itemContainer .commentForm textarea {
+  height: 30px;
+}
+.commentSection .header .commentForm .postComment,
+.itemContainer .commentForm .postComment,
+.itemContainer .commentForm .cancelComment {
+  height: 36px;
+  background-color: #2692e6;
+  color: #fff;
+  font-weight: 500;
+  border: none;
+  padding: 0 15px;
+  border-radius: 2px;
+}
+.itemContainer .commentForm .cancelComment {
+  background: transparent;
+  color: rgba(17, 17, 17, 0.6);
+}
+.itemContainer .commentForm .cancelComment:hover {
+  color: black;
+}
+
+.commentSection .itemContainer {
+  margin-bottom: 16px;
+}
+.commentSection .comment {
+  display: flex;
+}
+.commentSection .commentHeader {
+  margin-bottom: 2px;
+}
+.commentSection .comment .username {
+  margin-right: 8px;
+  color: #111;
+  font-size: 13px;
+  font-weight: 500;
+}
+.commentSection .comment .body {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.itemContainer .controls {
+  margin-left: 64px;
+}
+.itemContainer .controls button,
+.itemContainer .controls .likedCount {
+  height: 32px;
+  background-color: transparent;
+  border: none;
+  font-size: 13px;
+  font-weight: 500;
+  color: rgba(17, 17, 17, 0.6);
+}
+.itemContainer .controls button {
+  cursor: pointer;
+}
+.itemContainer .controls .likedCount {
+  margin: 0px 5px;
+}
+.itemContainer .controls button img {
+  height: 16px;
+}
+.itemContainer .commentForm .profilePic {
+  width: 30px;
+  height: 30px;
+}
+.commentSection .comment .timestamp {
+  color: #888;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.comments .repliesSection {
+  padding-left: 60px;
+  padding-top: 16px;
+}
+
+.commentSection .itemContainer .viewReplies {
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.videoGrid {
+  display: flex;
+  flex-wrap: wrap;
+}
+.suggestion .videoGridItem {
+  display: flex;
+  height: auto;
+}
+.videoGridItem {
+  height: 200px;
+  margin-right: 4px;
+  margin-bottom: 24px;
+}
+.videoGridItem .thumbnail {
+  width: 210px;
+  height: 118px;
+  position: relative;
+}
+.suggestion .videoGridItem .thumbnail {
+  margin-right: 8px;
+}
+.videoGridItem .thumbnail img {
+  width: 100%;
+  height: 100%;
+}
+.videoGridItem .thumbnail .duration {
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  margin: 4px;
+  color: #fff;
+  background-color: rgba(17, 17, 17, 0.6);
+  opacity: 0.8;
+  padding: 2px 4px;
+  border-radius: 2px;
+  letter-spacing: 0.5px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 12px;
+}
+.videoGridItem .details {
+  padding-right: 24px;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  width: 210px;
+}
+.suggestion .videoGridItem .details {
+  padding-right: 0;
+  flex: 1;
+}
+
+.videoGridItem .details .title {
+  margin: 8px 0px;
+  max-height: 32px;
+  overflow: hidden;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  color: #212529;
+}
+.videoGridItem .details .username,
+.videoGridItem .details .stats {
+  color: rgba(17, 17, 17, 0.6);
+  font-size: 13px;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.videoGridHeader {
+  display: flex;
+  margin: 10px 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.videoGridHeader div {
+  flex: 1;
+}
